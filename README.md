@@ -1,7 +1,37 @@
 # markitdown-hwp
 
-[MarkItDown](https://github.com/microsoft/markitdown) plugin for HWP (한글 워드프로세서) files.
+[MarkItDown](https://github.com/microsoft/markitdown) plugin for HWP documents.
+
+HWP is a document format used by [Hancom Office](https://www.hancom.com/), the most widely used word processor in South Korea — commonly found in government, legal, and academic documents.
+
 Powered by [docpler](https://pypi.org/project/docpler/).
+
+## Installation
+
+```bash
+pip install markitdown-hwp
+```
+
+`markitdown` and `docpler` are installed automatically.
+
+## Usage
+
+```python
+from markitdown import MarkItDown
+
+md = MarkItDown(enable_plugins=True)
+result = md.convert("document.hwp")
+print(result.text_content)
+```
+
+No extra configuration needed — just `enable_plugins=True` and HWP files are recognized automatically.
+
+---
+
+# 한국어
+
+HWP(한글 워드프로세서) 파일을 지원하는 [MarkItDown](https://github.com/microsoft/markitdown) 플러그인입니다.
+내부적으로 [docpler](https://pypi.org/project/docpler/)를 사용합니다.
 
 ## 설치
 
@@ -21,12 +51,12 @@ result = md.convert("document.hwp")
 print(result.text_content)
 ```
 
-별도 설정 없이 `enable_plugins=True`만 지정하면 HWP 파일이 자동으로 인식됩니다.
+---
 
-## 라이선스
+## License
 
 MIT
 
-## HWP 포맷 관련 고지
+## HWP Format Notice
 
-본 제품은 한글과컴퓨터의 한글 문서 파일(.hwp) 공개 문서를 참고하여 개발하였습니다.
+This product was developed with reference to the HWP document file (.hwp) specification published by [Hancom](https://www.hancom.com/etc/hwpDownload.do).
