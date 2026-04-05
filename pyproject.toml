@@ -1,13 +1,13 @@
 [build-system]
 requires = ["setuptools>=68.0"]
-build-backend = "setuptools.backends._legacy:_Backend"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "markitdown-hwp"
-version = "0.1.0"
+version = "1.0.0"
 description = "MarkItDown plugin for HWP (한글 워드프로세서) file conversion"
 requires-python = ">=3.9"
-license = { text = "MIT" }
+license = { text = "BSL-1.1" }
 authors = [{ name = "docpler" }]
 keywords = ["hwp", "markitdown", "markdown", "plugin", "converter"]
 classifiers = [
