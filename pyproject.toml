@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "markitdown-hwp"
+version = "0.1.0"
+description = "MarkItDown plugin for HWP (한글 워드프로세서) file conversion"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "docpler" }]
+keywords = ["hwp", "markitdown", "markdown", "plugin", "converter"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Markup",
+]
+dependencies = [
+    "docpler",
+    "markitdown>=0.1.0",
+]
+readme = "README.md"
+
+[project.urls]
+Repository = "https://github.com/docpler/markitdown-hwp"
+
+[project.entry-points."markitdown.plugin"]
+hwp = "markitdown_hwp:HwpConverterPlugin"
