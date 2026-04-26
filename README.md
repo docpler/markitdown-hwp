@@ -55,7 +55,7 @@ print(result.text_content)
 
 ## License
 
-[Business Source License 1.1 (BSL 1.1)](https://mariadb.com/bsl11/) — Free to use, cannot be provided as a managed service. Converts to Apache 2.0 on 2031-04-05.
+[Elastic License 2.0 (ELv2)](https://www.elastic.co/licensing/elastic-license) — Free to use, cannot be provided as a hosted/managed service, license-key circumvention prohibited, copyright/trademark notices must be preserved.
 
 ## HWP Format Notice
 
